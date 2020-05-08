@@ -5,7 +5,7 @@ import App from './App';
 describe(`main`, () => {
   test('only this spec should be failed', async done => {
     const { findByTestId } = render(<App />)
-    const test = await findByTestId('learn-button')
+    const test = await findByTestId('random-test-id')
     expect(test).toBeInTheDocument()
 
     done()
